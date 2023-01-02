@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="asset" href="/asset/">
+  <link rel="images" href="/images/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #f5f5f5">
+
+<nav class="navbar" style="background-color: #ffffff;">
+  <div class="container" style="padding: 1% 1%;">
+    <div class="row" style="height: 60px;">
+      <div class="col-md-2" style="margin-top: 0.5%;">
+        <div class="navbar-header">
+          <img src="images/daraz-logo.png" alt="" width="100%" height="100%">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <form class="navbar-center" style="margin-top: 0.9%;">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search in Daraz" name="search" style="background-color: #f5f5f5; height: 50px;">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit" style="background-color: orange; height: 50px; width: 50px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" style="color: white"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <div class="" style="display: flex; justify-content: space-between; margin-top: 4%;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-top: 2.4%;">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <img src="images/daraz-app.png" width="70%"/>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="height: 344px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/carousel1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/carousel2.jpg" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container">
+  <div class="row mt-4">
+    <div class="col">
+      <div class="d-flex align-items-center" style="background-color: white; border-radius: 30px;">
+        <img class="image mr-2 ml-1" src="images/mart.png" alt="Beauty" style="width: 32px; height: 32px;">
+        <p style="margin-top: 10px;"><b>Mart</b></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex align-items-center" style="background-color: white; border-radius: 30px;">
+        <img class="image mr-2 ml-1" src="images/mart.png" alt="Beauty" style="width: 32px; height: 32px;">
+        <p style="margin-top: 10px;"><b>Mens Fashion</b></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex align-items-center" style="background-color: white; border-radius: 30px;">
+        <img class="image mr-2 ml-1" src="images/mart.png" alt="Beauty" style="width: 32px; height: 32px;">
+        <p style="margin-top: 10px;"><b>Home & living</b></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex align-items-center" style="background-color: white; border-radius: 30px;">
+        <img class="image mr-2 ml-1" src="images/mart.png" alt="Beauty" style="width: 32px; height: 32px;">
+        <p style="margin-top: 10px;"><b>11.11</b></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex align-items-center" style="background-color: white; border-radius: 30px;">
+        <img class="image mr-2 ml-1" src="images/mart.png" alt="Beauty" style="width: 32px; height: 32px;">
+        <p style="margin-top: 10px;"><b>Beauty</b></p>
+      </div>
+    </div>
+  </div>
+
+
+  <h3 class="mt-5 ">Flash Sale</h3>
+  <div class="mb-5" style="background-color: #ffffff">
+    <div class="d-flex align-items-center justify-content-between pt-3 pl-2 pr-2">
+      <div class="d-flex align-items-center">
+        <p>On Sale Now</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>Ending In </p>&nbsp;&nbsp;&nbsp;
+        <p class="text-light p-1 pl-2 pr-2" style="background-color: #ff6801;">00</p>&nbsp;&nbsp;&nbsp;
+        <p class="text-light p-1 pl-2 pr-2" style="background-color: #ff6801;">00</p>&nbsp;&nbsp;&nbsp;
+        <p class="text-light p-1 pl-2 pr-2" style="background-color: #ff6801;">00</p>&nbsp;&nbsp;&nbsp;
+      </div>
+
+      <button type="button" class="btn text-uppercase" style="color: #ff6801; background-color: #ffffff; border: 1px solid #ff6801;">Shop More</button>
+      
+    </div>
+    <hr>
+    <div class="card-group">
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/everday.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">NESTLE Everyday 850gm- Separate Tea Whitener</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/earphones.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">wireless Headphones Bluetooth 5.0 Earphones</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/trimmer.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">Ab Twister Exercise Machine Waist Tummy...</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/powerbank.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">Powerbank 10000 mAH for all android Mobile Phones</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/dalda.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">Dalda VTF Banaspati Ghee 1x5kg Pillow Pouch</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/beases.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card-text">Baseus 20000mAh Fast Charging Power Bank, 20...</span><br>
+            <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+            <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <h3>DarazMall</h3>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="images/shan.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <span class="card-text">Shan</span><br>
+            <span class="text-muted"><small>Shan</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <h3>Categories</h3>
+    <div class="card-group">
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card-group">
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-color: #ffffff;">
+        <img src="images/flowers.jpg" class="card-img-top"  alt="...">
+        <div class="card-body text-center">
+          <span class="card-text">Flowers</span><br>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <h3>Just For You</h3>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card mb-3" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" style="border-color: #ffffff;">
+          <img src="https://static-01.daraz.pk/original/6f7aef3d390743207ef95bbb7b516ffb.jpg_200x200q80-product.jpg_.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="card-text">Heel Pain Anti Crack Silicone Care Set</span><br>
+              <span class="card-text" style="color: #ff6801; font-weight: bold; font-size: large;">Rs.670</span><br>
+              <span><small class="text-muted" style="text-decoration: line-through;">Rs 1499</small> -55%</span><br>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star text-warning"></span>
+              <span class="fa fa-star" style="color: #cecece;">&nbsp;(89)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center mb-5">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-block text-uppercase" style="color: #ff6801; background-color: #ffffff; border: 1px solid #ff6801;">Load More</button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  
+
+
+
+</div>
+
+
+<!-- footer -->
+<div class="container-fluid" style="background-color: #2E2E54; display: flex; " >
+<div class="row">
+  <div class="col-xl-3" style="color:white ; padding: 20px;   margin-left: 65px; ">
+    <h4>Customer Care</h4>
+    <p style="margin:0px ; padding: 0px;" ><a href="" style="color: white;text-decoration: none; font-size: 13px;">Help Center</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">How to Buy</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Corporate & Bulk Purchasing</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Returns & Refunds</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz Shop</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Contact Us</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Purchase Protection</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz Pick up Points</a></p>
+    <h4>Customer Care</h4>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz University</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Sell on Daraz</a></p>
+    <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Join Daraz Affiliate Program</a></p>
+</div>
+
+<div class="col-xl-3" style="padding: 40px ; margin-left: 18px;">
+    <div style="color:white ;   ">
+        <h4 style=" font-family: 'Times New Roman', Times, serif;">Daraz</h4>
+        <p style="margin:0px ; padding: 0px;" ><a href="" style="color: white;text-decoration: none; font-size: 13px;">About Us</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Digital Payments</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz Cares</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz Blog</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Terms & Conditions</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Privacy Policy</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">NTN Number : 4012118-6</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">STRN Number : 1700401211818</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Online Shopping App</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Online Grocery Shopping</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">Daraz Exclusive</a></p>
+        <p style="margin:0px ; padding: 0px;"><a href="" style="color: white;text-decoration: none; font-size: 13px;">How to shop on Daraz</a></p>
+    </div>
+</div>
+
+<div class="col-xl-5" >
+    <div style="display: flex;" >
+        <div style="padding:20px ;">
+            <img src="asset/QRimage.png" alt="QR" width="110" height="110" style="border-radius:10px ;">
+        </div>
+        <div style=" margin-top: 43px; ">
+            <img src="asset/appimage.png" alt="QR" width="50" height="50" style="border-radius:10px ;">
+        <p style="color: orange; margin:0px ; padding: 0px; font-size: smaller;">Happy Shopping</p>
+        <p style="color: white;margin:0px ; padding: 0px;  font-size: smaller;">Download App</p>
+        </div>
+    </div>
+    <div style="display: flex; padding: 10px;">
+        <img src="asset/appleicon.png" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+        border-color: white;">
+        <img src="asset/googleicon.png" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+        border-color: white;">
+        <img src="asset/appgalleryicon.png" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+        border-color: white;">
+    </div>
+</div>
+</div>
+  </div>
+  
+  <div class="container-fluid row" style="background-color: white; display: flex; ">
+  
+  <div class="col-xl-3" >
+      <h5 style="padding: 13px; margin-left: 40px;">Payment Methods</h5>
+      <div style="display: flex; padding: 10px; margin-left: 20px">
+          <img src="asset/visa.jfif" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/mastercard.jfif" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/easypaisa.png" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/UnionPay.png" alt="QR" width="130" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+      </div>
+      <div style="display: flex; padding: 10px; margin-left: 20px">
+          <img src="asset/jass cash.jpg" alt="QR" width="78" height="45" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+      
+      </div>
+      <div style="display: flex; padding: 14px;margin-left: 28px">
+          <h6>&#169;Daraz 2022</h6>
+      </div>
+      
+  </div>
+  <div class="col-xl-3">
+      
+      <h5 style="padding: 13px; margin-left: 40px;">Daraz International</h5>
+      <div style="display: flex; padding: 10px; margin-left: 15px">
+          <img src="asset/pak.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/bangladesh.jfif" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/Sari Lanka.jfif" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/Myanmer.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/nepal.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+      </div>
+  </div>
+  <div class="col-xl-3">
+      <h5 style="padding: 13px; margin-left: 40px;">Follow Us</h5>
+      <div style="display: flex; padding: 10px; margin-left: 15px">
+          <img src="asset/facebook.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/twitter.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/instagram.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/youtube.png" alt="QR" width="120" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          <img src="asset/dailymotion.jpg" alt="QR" width="100" height="45" style= " margin-left:4px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+      </div>
+  </div>
+  <div class="col-xl-3">
+      <h5 style="padding: 13px; margin-left: 40px;">Verified by</h5>
+      <div style="display: flex; padding: 10px; margin-left: 20px">
+          <img src="asset/PCI.png" alt="QR" width="140" height="90" style= " margin-left:20px; border-radius:5px ; border-style: solid;border-width: 1px;
+          border-color: white;">
+          
+      </div>
+  </div>
+  
+  
+  </div>
+  
+  
+  <div class="container-fluid row" style="background-color: #f1f1f1; display: flex; ">
+  <div class="col-xl-3">
+      <div style="padding: 13px; margin-left: 35px;" class="text-muted"><h5 style="padding: 7px; margin-left: 2px; font-size: 20px;">How Daraz Transformed Online Shopping in Pakistan</h5>
+      <p style="margin-left:5px ; font-size: 10px;">Daraz first made waves in Pakistan’s e-commerce market after
+          its introduction in 2012. We have since grown to become Pakistan’s 
+          largest platform for online shopping with a network spread across Asia
+          in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our
+          vision was to provide a safe, efficient online marketplace platform
+          for vendors and customers across the country to come together. 
+          We started off exclusively as an online fashion retail platform and
+          over the years expanded to become a complete one-stop solution for
+          all your buying needs. Daraz prides itself on not being just
+          another ecommerce venture in Asia. We work tirelessly to make
+          sure that we provide users with the best online online shopping 
+          experience and value for their purchases. Whether you shop online
+          through our website or our online shopping mobile App, you can
+          expect easy navigation, customized recommendations, and a smooth
+          online shopping experience guaranteed.</p>
+  
+          <h5 style=" font-size: 20px;">What Makes Us Different from Other Online Shopping Platforms?</h5>
+  
+          <p style=" font-size: 10px;">
+              <b>Select from the Largest Online Marketplace in Pakistan</b>
+              With over 15 million products to select from, Daraz offers 
+              its customers the most comprehensive listing of products in 
+              the country. Whether you’re looking for electronics, apparel,
+               appliances, or groceries – there is something for everyone.</p>
+  
+               <p style=" font-size: 10px;">
+                  <b>Hassle Free Delivery </b>
+                  Online shopping is only as good as its execution and Daraz 
+                  promises hassle free delivery right from the moment you order
+                   to when your package is dropped at your door. We cater to both 
+                   major and smaller cities alike, and give you the choice
+                    to track your package as it makes its way to you so you 
+                    always know your order status. If you are unsatisfied with
+                    any aspect of your order, we have a simple 7-day return or 
+                    exchange policy.</p>
+      
+  
+  
+                    <p style=" font-size: 10px;">
+                      <b>Payment Options to Suit Every Style</b>
+                      You can choose to pay through a credit/debit card, 
+                      opt for cash on delivery or even go for EMI (easy monthly instalments).
+                       You can also avail exclusive offers by downloading Daraz Wallet 
+                       – a closed loop digital wallet</p>
+      </div>
+      
+  
+  </div>
+  
+  <div class="col-xl-3">
+      <div style="padding: 13px; margin-left: 35px; margin-top: 10px;" class="text-muted" >
+      <p style=" font-size: 10px;">
+          that offers you a secure, easy way to make payments. We also have easypaisa
+               & jazzcash payment method for our customers' ease</p>
+               <p style=" font-size: 10px;"><b>Shop from Verified Vendors</b>
+                  Daraz understands that online shopping in Pakistan comes 
+                  with its fair share of risks. This is why with Daraz Marketplace
+                   and Daraz Mall customers have the security of choosing from verified
+                    vendors and brands from Karachi, Lahore, Islamabad and all across
+                    Pakistan. Now you’ll never have to second guess authenticity because
+                     Daraz makes sure to do it for you!</p>
+              <p style=" font-size: 10px;"><b>Shop Around the World with Daraz Global Collection</b>
+                  International sellers and local convenience come
+                  together with Daraz Global collection. Get the chance 
+                  to shop online from vendors around the world without leaving 
+                  the Daraz website. Featuring thousands of novelty gadgets and accessories,
+                   Daraz Global Collection offers you a selection of products that you won’t 
+                   find anywhere else when you’re online shopping in Pakistan.</p>
+  
+                   <P style=" font-size: 10px;">
+                     <b> Avail Exclusive Discounts, Offers, and Promotions</b>
+  Online shopping with Daraz means you get the chance to avail exclusive online-only 
+  promotional packages as well as discount vouchers from our vendors when you shop
+   from their pages. Our flash sales give you customized product offers all curated
+    with the help of our advanced AI technology so you always have deals you’ll actually
+     be interested in!
+                  </P>
+  
+                  <p style=" font-size: 10px;">
+                      <b>Buy Value, not Just Goods with Daraz Care</b>
+  Daraz does not just cater online shopping in Pakistan but also 
+  aims to simplify the way you give back to society. With charities 
+  spanning across sectors of education, health care, environmental preservation, 
+  and shelters, you can choose to make a big difference with a few, simple clicks.
+                  </p>
+  
+                  <p style=" font-size: 10px;">
+                      <b>Simplify Corporate Purchases</b>
+  Who says corporate purchases need to be a complicated affair?
+  When you opt for Daraz Corporate, you get an efficient and transparent
+   solution for your business’ bulk purchasing needs. We’re proud to be 
+   working with some of the most prestigious organizations in Pakistan across 
+   a number of different industries.
+                  </p>
+  
+           </div>
+  </div>
+  
+  <div class="col-xl-3">
+      <div style="padding: 13px; margin-left: 35px; margin-top: 10px;" class="text-muted" >
+         <h5 style=" font-size: 20px;"> Top Categories & Brands</h5>
+          <h6>MOBILE PHONES IN PAKISTAN</h6>
+          <p style=" font-size: 10px;">
+               
+   Apple iPhones, Honor Mobiles, Huawei Mobiles, Tecno Mobiles, 
+   Redmi Mobiles, Xiaomi Mi Mobiles, Nokia Mobiles, OnePlus Mobiles, 
+   Oppo Mobile Phones, Realme Mobiles, Samsung Mobile Phones, Vivo Mobile
+    Phones, Mobile Accessories, Smart Watches
+   LATEST LAPTOPS</p>
+   <h6>LATEST LAPTOPS</h6>
+   <p style=" font-size: 10px;">
+      
+  Dell Laptops, HP Laptops, Lenovo Laptops, Mouse, 
+  Gaming Graphic Cards, lenovo ideapad 3, Macbook Pro 13, 
+  Hp Probook 650 G2
+   </p>
+  
+   <h6>LED TV</h6>
+   <p style=" font-size: 10px;">
+      
+      Changhong Led Tv, LG Led Tv, Samsung Led Tv, Sony Led Tv, TCL LED TVs
+   </p>
+  
+   <h6>HOME APPLIANCES</h6>
+   <p style=" font-size: 10px;">
+      Microwave oven, Geyser, Heater, Refrigerators,
+       Deep Freezers, Generators, Water Dispensers, Fans,
+        Room Cooler, Table Fans, Wall Fans, Exhaust Fans, Pedestal
+         Fans, Window Ac, Solar Panel, Washing Machine
+   </p>
+  
+   <h6>DSLR CAMERAS</h6>
+   <p style=" font-size: 10px;">
+      Camera Tripods, Drones, IP & CCTV Cameras, Nikon D7000, Nikon D5600,
+       Canon 200D, Canon 1200D, Fujifilm Instax Mini 11, Canon M50
+   </p>
+  
+   <h6>HEALTH & BEAUTY</h6>
+   <p style=" font-size: 10px;">
+      sunisa foundation, Biofad, janssen facial kit, Glutathione Injection,
+       Glutathione Cream Sauvage,
+       Glutathione Tablets, Glutathione Soap, Infrared Thermometers, N95 Mask
+   </p>
+   <h6>TRENDING</h6>
+   <p style=" font-size: 10px;">
+      Wow Womens Week, Azaadi Sale 2022, Shopping Expo, 11 11 Sale, 12.12 Sale, 
+      Live Cricket Streaming, Online Bills, Core I5 Laptop, Gtx 1060, Samsung A32,
+       Samsung A51, Samsung A52, Samsung A71, Samsung A72, Samsung M31, Samsung S20,
+        Samsung S20 Ultra 5G, Samsung S21, Samsung S21 Ultra, Samsung Z Flip, Tecno Camon 
+        17, Tecno Spark 6, Vivo V20, Poco X3 Pro, Vivo V21, Vivo V21E, Vivo X70 Pro, Vivo Y12, 
+        Vivo Y12S, Vivo Y1S, Vivo Y20, Vivo Y51, Vivo Y51S, Oppo F19 Pro, Oppo Reno 6, Xiaomi 
+        Poco F3, Xiaomi Poco M3, Xiaomi Poco X3, Xiaomi Poco X3 Gt, Xiaomi Redmi 9C, Xiaomi Redmi
+         Note 10 Pro, Sharp Aquos R2
+   </p>
+  
+   <h6>SHOP WORLDWIDE WITH LAZADA</h6>
+   <p style=" font-size: 10px;">
+      Singapore, Malaysia, Philipines, Indonesia, Vietnam, Thailand
+   </p>
+   
+      
+               </div>
+  </div>
+  <div class="col-xl-3">
+      <div style="padding: 13px; margin-left: 35px; margin-top: 10px;" class="text-muted">
+          <h5>WOMEN'S FASHION</h5>
+          <p style=" font-size: 10px;">
+  Apple iPhones, Honor Mobiles, Huawei Mobiles, Tecno Mobiles, Redmi Mobiles, Xiaomi Mi Mobiles, Nokia Mobiles, OnePlus Mobiles, Oppo Mobile Phones, Realme Mobiles, Samsung Mobile Phones, Vivo Mobile Phones, Mobile Accessories, Smart Watches
+  LATEST LAPTOPS</p>
+  
+  <h6>MEN'S FASHION</h6>
+   <p style=" font-size: 10px;">
+      Men's Shirts, Men's T-Shirts
+   </p>
+      
+   <h6>ONLINE GROCERY STORE</h6>
+   <p style=" font-size: 10px;">
+      Oil & Ghee, Basmati Rice, Dried Fruits, Chocolates, Mattresses
+   </p>
+  
+   <h6>ONLINE BOOK STORE</h6>
+   <p style=" font-size: 10px;">
+      English Books, Islamic Books, History Books, English Literature Books,
+       Kids Urdu Stories, Pride & Prejudice,
+       Harry Potter Story Books, Namal Novel, Nimra Ahmed Novels
+   </p>
+  
+   <h6>USED CARS FOR SALE</h6>
+   <p style=" font-size: 10px;">
+      Suzuki Wagon R, KIA Sportage, Honda City, Toyota Prado, Suzuki Alto,
+       Suzuki Cultus, Honda Civic, Honda 125, Honda 70, Yamaha Ybr 125, Hi Speed 150, 
+       Hi Speed Freedom 200, Metro 70, Super Power 125, 
+      Monster JMS 3500 Electric Bike, Super Power 70, Car Accessories
+   </p>
+  
+   <h6>AIR CONDITIONERS</h6>
+   <p style=" font-size: 10px;">
+      Kenwood Ac, Haier Ac, Gree Ac, Dawlance Ac, Orient Ac, Ecostar Ac, 
+      Inverex Solar Ac, Pel Ac
+   </p>
+  
+   <h6>TOP MOBILE PHONES</h6>
+   <p style=" font-size: 10px;">
+      Nokia G20, redmi 9, realme 7 pro, realme c15, realme c21, vivo y20s,
+      realme c11 Price in Pakistan, itel vision 1 pro price in pakistan, samsung galaxy 
+      a02 price in pakistan, Infinix Hot 10, Infinix Hot 8, Infinix Hot 9, Infinix Note 10 Pro,
+       Infinix Note 7, Infinix Note 8, Infinix Zero 8, Inifnix Smart 5, iPhone 11, iPhone 12,
+        iphone 12 Pro Max, iPhone 12 Pro, iPhone 6, Itel A25, Mi 10T, Nokia 105, Oppo A15, Oppo
+         A15S, Oppo A53, Oppo A54, Infinix Zero X Pro, Infinix Zero X Neo, Oppo F19, Oppo Reno 5,
+          Oppo Reno 5 Pro, Xiaomi Poco M3 Pro, Realme 6 Pro, Realme 8, Realme Narzo 30A, Samsung 
+          A02S, Samsung A11, Samsung A12, Samsung A31, Vivo Y33s, Infinix Note 11, 
+      Tecno Spark 6 Go, Samsung A52s, Samsung Tab A7 Lite, Oppo Reno 6 Pro
+   </p>
+  
+   <h6>MEDICINE</h6>
+   <p style=" font-size: 10px;">
+      surbex z, tea tree oil, hydrozole cream, biotin tablets, evion capsule, lactogen 1
+      , minoxidil, clobevate cream, 
+      centrum silver, maxdif cream, dermovate cream, cac 1000, Panadol Migraine
+   </p>
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>
